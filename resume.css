@@ -1,0 +1,632 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+/*-------------------Full screen section-------------------*/
+
+header {
+  display: flex;
+  padding: 0 3%;
+  background-color: #494848;
+  height: 270px;
+}
+.info {
+  background-color: #262626;
+  padding: 2% 3%;
+  width: 15%;
+  position: absolute;
+  top: 0;
+  border-radius: 0 0 5px 5px;
+  color: #d4b590;
+}
+.name {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.info li {
+  color: #fff;
+}
+.info hr {
+  width: 30%;
+  margin: 8% auto;
+}
+.skills {
+  margin-top: 20%;
+}
+.skills p {
+  font-size: 1.3rem;
+}
+.talent {
+  margin-top: 5%;
+}
+.talent li {
+  padding: 2%;
+}
+.bar {
+  background: #26272b;
+  display: block;
+  height: 7px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 0 4px #d4b590;
+  width: 100%;
+  margin: 2% 0;
+}
+.bar span {
+  height: 10px;
+  float: left;
+  background: #d4b590;
+}
+.MERN {
+  width: 90%;
+}
+.JcPy {
+  width: 90%;
+}
+.ReCt {
+  width: 80%;
+}
+.JsPr {
+  width: 90%;
+}
+.MsOf {
+  width: 100%;
+}
+.CoWr {
+  width: 90%;
+}
+.WeSc {
+  width: 80%;
+}
+.intro {
+  width: 100%;
+}
+.contact {
+  line-height: 1.2em;
+  width: 50%;
+  padding-top: 5px;
+  margin-left: 25%;
+}
+.contact li {
+  padding: 4px;
+  font-size: 1.2rem;
+  color: white;
+  list-style: none;
+}
+.about {
+  line-height: 1.2em;
+  color: hsl(0, 0%, 87%);
+  width: 65%;
+  margin-left: 25.2%;
+  margin-top: 10px;
+  font-size: 1.4rem;
+}
+.workArea {
+  display: flex;
+}
+.section1 {
+  background-color: #f0efef;
+  width: 22%;
+  margin-right: 0 !important;
+  margin-top: 20%;
+  padding: 1% 2%;
+}
+.section1 h2 {
+  color: hsl(33, 44%, 50%);
+  margin-bottom: 3%;
+}
+.resPaper a,
+.extras a,
+.compCode a {
+  color: hsl(45, 83%, 38%);
+  font-weight: 650;
+}
+.section1 p,
+.keyProj p {
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+}
+.resPaper,
+.extras,
+.compCode {
+  padding: 5%;
+  line-height: 1.3rem;
+}
+
+.platforms {
+  display: grid;
+  grid-template-columns: auto auto;
+  line-height: 1.7rem;
+}
+.platforms a {
+  font-weight: 650;
+  font-size: 1.15rem;
+}
+
+.social {
+  justify-content: center;
+  display: flex;
+}
+.social li {
+  padding: 0 4%;
+}
+.social a {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.section2 {
+  width: 100%;
+}
+.keyProj {
+  padding: 4%;
+  padding-left: 7%;
+}
+.section2 h2 {
+  color: hsl(33, 44%, 50%);
+  font-size: 1.7rem;
+  margin-bottom: 1.5%;
+}
+.keyProj h3,
+.edu h3 {
+  margin-bottom: 1.5%;
+  font-weight: 670;
+}
+.card {
+  padding: 2.5%;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  margin-bottom: 2%;
+}
+.card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.projects {
+  align-items: center;
+  justify-content: center;
+}
+.projects a {
+  margin: 2% 0 0 45%;
+}
+.projects button {
+  padding: 4px 6px;
+  border-radius: 5px;
+  font-size: 1.15rem;
+  background-color: #d6a76c;
+  font-weight: 670;
+}
+.education {
+  padding-left: 5%;
+  line-height: 1.3rem;
+}
+
+.schCol {
+  display: flex;
+  gap: 2%;
+}
+.edu {
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3);
+  padding: 1% 3%;
+  border-radius: 5px;
+}
+
+.copyright {
+  background-color: #f0efef;
+  width: 100%;
+  padding: 1% 0;
+  margin-top: 8%;
+  text-align: center;
+}
+
+.fa-mobile {
+  font-size: 1.5rem !important;
+  font-weight: 600;
+}
+
+/*------------------Mobile Section-----------------*/
+
+.mobLogo {
+  position: absolute;
+  left: 1%;
+  top: 1%;
+  width: 50px;
+  border-radius: 50%;
+}
+.mobSection {
+  display: flex;
+}
+
+.verticalNav {
+  height: 50%;
+  width: 60px;
+  line-height: 2rem;
+  margin-top: 40%;
+}
+.verticalNav .bttn {
+  width: 100%;
+  outline: none;
+  padding: 6px;
+  box-shadow: 1px 1px #000;
+  cursor: pointer;
+  font-weight: bold;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.mainArea {
+  display: flex;
+  flex-direction: column;
+}
+.myIntro {
+  position: relative;
+}
+.topIntro {
+  width: 80%;
+  margin-left: 10% !important;
+  margin-top: 10% !important;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 2px solid;
+  box-shadow: 5px 5px #000;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  color: hsl(0, 0%, 10%);
+}
+.topIntro h1 {
+  color: hsl(0, 0%, 10%);
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.topIntro ul {
+  line-height: 1.2em;
+}
+.mainDisplay {
+  position: relative;
+  margin: 7% 3%;
+}
+.mainDisplay #skills,
+.mainDisplay #projects,
+ .mainDisplay #education,
+.mainDisplay #extras { 
+  position: absolute;
+  top: 100%;
+  display: none;
+}
+.mainDisplay #about {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #000;
+  line-height: 2rem;
+  padding: 1%;
+  width: 100%;
+}
+.mainDisplay #about a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.mainDisplay #about a:hover {
+  cursor: pointer;
+}
+.mainDisplay #skills {
+  color:#000;
+  width: 110%;
+  font-size: 1.3rem;
+  margin: 0 10%;
+}
+.mainDisplay #skills li {
+  width: 100%;
+}
+.mainDisplay #skills ul{
+  line-height: 1rem;
+}
+.mainDisplay #skills p {
+  font-size: 1.3rem;
+  width: 110%;
+  text-align: left;
+  margin-bottom: 5%;
+}
+.mainDisplay #skills .bar{
+  background-color: #fff;
+}
+.mainDisplay #skills .bar span {
+  background-color: #262626;
+}
+.mainDisplay #projects {
+  width: 270px;
+  height: 100%;
+}
+.mainDisplay #projects .carousel {
+  background-size: cover;
+  width: 100%;
+  height: 35vh;
+  border-radius: 10px;
+  margin:4% ;
+  
+  margin-top: 10%;
+}
+.mainDisplay #projects .carousel-cell {
+  width: 66%;
+  margin-right: 10px;
+  border-radius: 5px;
+  height:30vh !important;
+  margin-top: 3%;
+  max-width: 100vw;
+}
+.mainDisplay #projects .carousel-cell:hover {
+  cursor: pointer;
+}
+.mainDisplay #projects.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: "";
+  line-height: 200px;
+}
+
+.mainDisplay #projects .cell1 {
+  background-image: url("./images/project1.PNG");
+  background-size: 160%;
+  background-repeat: no-repeat;
+}
+
+.mainDisplay #projects .cell2 {
+  background-image: url("./images/project2.png");
+  background-size: 160%;
+  background-repeat: no-repeat;
+}
+
+.mainDisplay #projects .cell3 {
+  background-image: url("./images/project3.PNG");
+  background-size: 160%;
+  background-repeat: no-repeat;
+  max-width: 100vw;
+}
+.pro1,.pro2,.pro3{
+  position: absolute;
+  bottom: 0;
+  color: #000;
+  text-align: center;
+}
+.mainDisplay #projects button{
+  background-color: #000 !important;
+}
+.flickity-prev-next-button{
+  color: #fff;
+  margin-top: 10% !important;
+  
+}
+.btnProj {
+  margin: auto;
+  margin-top: 10%;
+  justify-content: center;
+  align-items: center;
+}
+.btnProject {
+  display: flex;
+  margin: auto;
+  color: #fff;
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.mainDisplay #education{
+  color: #000;
+  margin-left: 6%;
+  width: 110%;
+}
+.mainDisplay .second{
+  border-top:2px solid;
+  border-right:2px solid ;
+  margin: 4% 0;
+  text-align: right;
+  padding: 2%;
+}
+.mainDisplay .first{
+  padding: 2%;
+  margin: 4% 0;
+  text-align: left;
+  border-bottom:2px solid;
+  border-left:2px solid ;
+
+}
+.mainDisplay #extras{
+  color: #000;
+  margin: 6%;
+  width: 110%;
+}
+.mainDisplay #extras ul{
+  display: flex;
+}
+.mainDisplay #extras img{
+  width: 50%;
+}
+.mainDisplay #extras h3 {
+margin: 5%;
+}
+.mainDisplay #extras a{
+  text-decoration: none;
+  color:#000;
+  font-weight: bold;
+}
+
+
+.footer {
+  position: absolute;
+  bottom: 0.5%;
+  left: 0;
+  width: 100%;
+}
+.footer a {
+  text-decoration: none;
+  color: #000;
+}
+.footer a:hover {
+  cursor: pointer;
+}
+
+.mobile {
+  display: none !important;
+}
+
+/*-------------------Responsiveness----------------*/
+
+
+@media only screen and (max-width: 1027px) {
+  .fullScreen {
+    display: none !important;
+  }
+  .mobile{
+    display: block !important;
+  }
+  body {
+    background:url('./images/mobBack.jpeg');
+      background-size: cover;
+    height: 100% !important;
+  }
+  
+}
+
+ @media only screen and (max-width: 300px) {
+  .topIntro {
+    width: 180px;
+  }
+  .verticalNav {
+    margin-top: 60%;
+  }
+  .topIntro li {
+    font-size: 0.9rem;
+  }
+} 
+@media only screen and (min-width: 495px) and (max-width: 1300px) {
+  .topIntro {
+    width: 150%;
+  }
+
+  .myIntro {
+    padding-left: 50%;
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 760px) and (min-height: 1000px) {
+  .verticalNav .btn {
+    font-size: 1.8rem;
+    width: 200%;
+  }
+  .myIntro {
+    padding-left: 15%;
+  }
+  .topIntro {
+    width: 450px;
+    padding: 5%;
+    font-size: 2rem;
+  }
+  .mobLogo {
+    width: 10%;
+  }
+  .footer li a {
+    font-size: 3rem;
+  }
+}
+
+
+@media only screen and (min-width:765px) and (max-width:1026px){
+  #about{
+    width: 90% !important;
+    margin-left: 10% !important;
+    margin-top: 10% !important;
+    font-size: 2rem !important;
+    text-align: center;
+  }
+  .mainArea{
+    width: 100% !important;
+  }
+  .topIntro{
+    width: 80% !important;
+    margin: 5% !important;
+    
+  }
+  .myIntro{
+    padding-left: 5% !important;
+  }
+  .verticalNav .bttn{
+    font-size: 1.5rem;
+    width: 180%;
+  }
+  #skills,#projects,#education,#extras{
+    margin-left: 15% !important;
+    width: 80% !important;
+  }
+  #projects{
+    height:100%;
+  }
+  #projects .projectDetail{
+    width: 100%;
+  }
+  
+  #skills li{
+    width: 70% !important;
+  }
+}
+
+@media only screen and (max-width:300px){
+  #about p{
+    font-size: 0.9rem;
+  }
+  .myIntro,.topIntro{
+    width: 170px !important;
+  }
+  #skills p{
+    width: 190px !important;
+    font-size: 1rem !important;
+    margin-bottom: 10% !important;
+    margin-top: 5% !important;
+  }
+  #skills .bar{
+    width: 60% !important; 
+  }
+  #projects{
+    width: 100% !important;
+  }
+  #projects .btnProj{
+    margin-top: 50% !important;
+  }
+  #projects .cell1,
+  #projects .cell2,
+  #projects .cell3{
+    background-size: 180% !important;
+  }
+  .flickity-prev-next-button{
+    width: 30px !important;
+    margin-top: 100px !important;
+  }
+  .flickity-prev-next-button img{
+    width: 10% !important;
+  }
+  #extras,#education{
+    font-size: 0.9rem !important;
+  }
+}
